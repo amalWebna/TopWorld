@@ -1,0 +1,472 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Welcome to Top World Co. Website</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="http://code.jquery.com/jquery-1.4.4.js" type="text/javascript"></script>
+<script src="js/jquery.bxSlider.min.js" type="text/javascript"></script>
+<script src="js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/jquery.dd.js"></script>
+<link href="css/dd.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+	$(document).ready(function(){		
+		
+		$('#page_container').css('left',(($(window).width()/2)-501)+ 'px');
+
+		
+		var bg_slider = $('#bg_slider').bxSlider({
+			mode:'horizontal',
+			auto:true,
+            controls: false,
+			speed:1000,
+			pause:8000,
+			easing:'easeOutSine'
+        });
+		
+		var product_slider = $('#product_slider').bxSlider({
+			mode:'vertical',
+			auto:true,
+            controls: false,
+			displaySlideQty:4,
+			speed:1000,
+			pause:8000,
+			easing:'easeOutSine'
+        });
+		
+		$('#pre_product').click(function() {
+            product_slider.goToPreviousSlide();
+            return false;
+        });
+        
+        $('#next_product').click(function() {
+            product_slider.goToNextSlide();
+            return false;
+        });
+		
+		<!--ads-->
+		$('#ads').bxSlider({
+				//controls: true,
+				mode:'horizontal',
+				pause:2000,
+				speed: 1000,
+				pager: true,
+            	controls: false,
+            	autoHover: true,
+				displaySlideQty:3
+			});
+		
+		
+		// Menu Script
+		$(".menu_bg").animate({
+			top: '0px'
+		  }, 1000, function() {
+				
+		  });
+		  
+		
+		
+		//dropdown menu
+		$('#navigation li').hover( function()
+		{
+			$(this).children('ul').not(':animated').slideDown('#navigation li ul');
+		}, function()
+		{
+			$(this).children('ul').slideUp('#navigation li ul');
+		});
+		//dropdown menu
+		
+		try {
+		$("#websites2").msDropDown({mainCSS:'dd2'});
+		//alert($.msDropDown.version);
+		//$.msDropDown.create("body select");
+		$("#ver").html($.msDropDown.version);
+		} catch(e) {
+			alert("Error: "+e.message);
+		}
+	});
+	
+	
+</script>
+</head>
+
+<body>
+<div class="page_container">
+  <div class="menu_container">
+    <div class="menu_bg">
+      <div class="menu_container_inside">
+        <div class="logo"><a href="index.html"><img src="images/logo.png" alt="" border="0" /></a></div>
+        <div class="mainmenu_top">
+          <div class="mainmenu_top_content">
+            <div class="top_img_link"><a href="#"><img src="images/icon_top.png"  alt="" border="0" /></a></div>
+            <div  class="top_link">Welcome to <strong>Top World</strong> | <a href="#">Login</a> / <a href="#">Register</a> | Shopping Bag : 10 Items</div>
+          </div>
+          <div class="mainmenu_top_content">
+            <div class="find_product2">
+              <!--<label>Search:</label>-->
+              <div class="sitesearch_in">
+                <div id="currency1">
+                  <select name="websites2" id="websites2" tabindex="1">
+                    <option name="one" value="EUR" title="">EUR</option>
+                    <option name="one" value="KWD" title="">KWD</option>
+                    <option name="one" value="KWD" title="">AED</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="find_product">
+              <!--<label>Search:</label>-->
+              <div class="sitesearch_input">
+                <input name="input" type="text" value="Search" />
+              </div>
+              <div class="go"><img src="images/go.png" alt="" /></div>
+            </div>
+          </div>
+        </div>
+        <div class="mainmenu">
+          <ul id="navigation">
+            <li><a href="#" class="main_menu">New In</a></li>
+            <li><a href="#" class="main_menu">Skin Care</a>
+                <ul>
+                  <li><a href="#">Soak</a></li>
+                  <li><a href="#">Salt and scrubs</a></li>
+                  <li><a href="#">Nail Treatments</a></li>
+                  <li><a href="#">Nail extensions </a></li>
+                  <li><a href="#">Nail art</a></li>
+                  <li><a href="#">Implements</a></li>
+                  <li><a href="#">Hands treatments</a></li>
+                  <li><a href="#">Foot treatment</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="main_menu">Cosmetics</a>
+                <ul>
+                  <li><a href="#">Lips</a></li>
+                  <li><a href="#">Nails</a></li>
+                  <li><a href="#">Eyes</a></li>
+                  <li><a href="#">Face</a></li>
+                  <li><a href="#">Brushes and applicator</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="main_menu">Hair</a></li>
+            <li><a href="#" class="main_menu">Bath &amp; Body</a></li>
+            <li><a href="#" class="main_menu">Fragrance</a></li>
+            <li><a href="#" class="main_menu">Brands</a></li>
+            <li><a href="#" class="main_menu">Gifts</a></li>
+          </ul>
+          <!--    -->
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- banner-->
+  <div id="InnerContainer">
+    <div class="InnerContainer"> 
+      
+      <!-- Inner Container Starts-->
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <!-- breadcrumb Starts-->
+          <td height="55"><div id="breadcrumb">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li class="arrow">&nbsp;</li>
+                <li><a href="#">Account</a></li>
+                <li class="arrow">&nbsp;</li>
+                <li><a href="#">Order History</a></li>
+                <li class="arrow">&nbsp;</li>
+                <li><span class="breadcrumbActive">Order Information</span></li>
+              </ul>
+            </div></td>
+          <!-- breadcrumb ends--> 
+        </tr>
+        <tr> 
+          <!-- inner Container Heading Starts-->
+          <td valign="top" class="innerContainerHeading">Order Information</td>
+          <!-- inner Container Heading ends--> 
+        </tr>
+        <tr>
+          <td valign="top">
+          
+          
+          <div id="content">
+
+    <table class="list">
+    <thead>
+      <tr>
+        <td colspan="2" class="left">Order Detail</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="width: 50%; font-family: Arial, Helvetica, sans-serif; font-size: 12px;" class="left">          <b>Order ID:</b> #3<br>
+          <b>Date Added:</b> 31/01/2012</td>
+        <td class="left"><b>Payment Method:</b> Cash On Delivery<br>
+                    <b>Shipping Method:</b> Flat Shipping Rate          </td>
+      </tr>
+    </tbody>
+  </table>
+  <table class="list">
+    <thead>
+      <tr>
+        <td class="left">Payment Address</td>
+                <td class="left">Shipping Address</td>
+              </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="left">satish kumar<br>mawaqaa<br>123 new road<br>sharq 2213<br>Hawalli<br>Kuwait</td>
+                <td class="left">satish kumar<br>mawaqaa<br>123 new road<br>sharq 2213<br>Hawalli<br>Kuwait</td>
+              </tr>
+    </tbody>
+  </table>
+  <form id="order" enctype="multipart/form-data" method="post" action="http://satish-pc/demo/opencart_v1.5.1.3.1/upload/index.php?route=account/order/info&amp;order_id=3">
+    <table class="list">
+      <thead>
+        <tr>
+          <td width="29" style="text-align: center;" class="black"><input type="checkbox" onclick="$('input[name*=\'selected\']').attr('checked', this.checked);"></td>
+          <td width="313" class="left">Product Name</td>
+          <td width="90" class="right"><div align="center">Quantity</div></td>
+          <td width="332" class="right">Price</td>
+          <td width="185" class="right">Total</td>
+        </tr>
+      </thead>
+      <tbody>
+                <tr>
+          <td style="text-align: center; vertical-align: middle;">            <input type="checkbox" value="5" name="selected[]">            </td>
+          <td class="left">MacBook<input type="hidden" value="" name="">            </td>
+          <td class="right"><div align="center">4</div></td>
+          <td class="right">$500.00</td>
+          <td class="right">$2,000.00</td>
+        </tr>
+                <tr>
+          <td style="text-align: center; vertical-align: middle;">            <input type="checkbox" value="6" name="selected[]">            </td>
+          <td class="left">Sony VAIO<input type="hidden" value="" name="">            </td>
+          <td class="right"><div align="center">2</div></td>
+          <td class="right">$1,000.00</td>
+          <td class="right">$2,000.00</td>
+        </tr>
+                <tr>
+          <td style="text-align: center; vertical-align: middle;">            <input type="checkbox" value="7" name="selected[]">            </td>
+          <td class="left">MacBook Air<input type="hidden" value="" name="">            </td>
+          <td class="right"><div align="center">1</div></td>
+          <td class="right">$1,000.00</td>
+          <td class="right">$1,000.00</td>
+        </tr>
+              </tbody>
+      <tfoot>
+                <tr>
+          <td colspan="3"></td>
+          <td class="right"><b>Sub-Total:</b></td>
+          <td class="right">$5,000.00</td>
+        </tr>
+                <tr>
+          <td colspan="3"></td>
+          <td class="right"><b>Flat Shipping Rate:</b></td>
+          <td class="right">$5.00</td>
+        </tr>
+                <tr>
+          <td colspan="3"></td>
+          <td class="right"><b>Total:</b></td>
+          <td class="right">$5,005.00</td>
+        </tr>
+              </tfoot>
+    </table>
+    <div class="buttons">
+      <div class="left">Choose an action:        <select onchange="$('#order').submit();" name="action">
+          <option selected="selected" value="">With selected..</option>
+          <option value="reorder">Add to Cart</option>
+          <option value="return">Return Products</option>
+        </select>
+      </div>
+    </div>
+  </form>
+    <table class="list">
+    <thead>
+      <tr>
+        <td class="left">Order Comments</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="left">xfgnlksfnlgknldfknhldfkh</td>
+      </tr>
+    </tbody>
+  </table>
+      <h2>Order History</h2>
+  <table class="list">
+    <thead>
+      <tr>
+        <td class="left">Date Added</td>
+        <td class="left">Status</td>
+        <td class="left">Comment</td>
+      </tr>
+    </thead>
+    <tbody>
+            <tr>
+        <td class="left">31/01/2012</td>
+        <td class="left">Pending</td>
+        <td class="left"></td>
+      </tr>
+          </tbody>
+  </table>
+    <div class="buttons">
+    <div class="right"><a class="button1" href="http://satish-pc/demo/opencart_v1.5.1.3.1/upload/index.php?route=account/order"><span>Continue</span></a></div>
+  </div>
+  </div>
+          
+          
+          </td>
+        </tr>
+        
+        
+        
+        <tr>
+          <td height="30">&nbsp;</td>
+        </tr>
+      </table>
+      <!-- Inner Container ends--> 
+      
+    </div>
+  </div>
+  <!-- banner--> 
+  
+</div>
+<!--footer-->
+<div class="footer_top_wrap">
+    	<div class="footer_wrap_inn">
+        	<div class="signup">Signup For Newsletter Subcribtion</div>
+        </div>
+    </div>
+<!--footer-->
+<div class="footer">
+  <div class="footer_top">
+    <div class="footer_content">
+      <!--<div id="togglemore"></div>-->
+      <div class="footer_top_inner">
+        <div class="FooterMoreLinks">
+          <div id="FooterMoreLinks"> 
+            <!-- More links starts  -->
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="35%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" class="FooterMoreLinksHeading">about US</td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#">The Company</a></td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#">News &amp; Events</a></td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#"> Site Map</a></td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#">Career</a></td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#"> Contact Us</a></td>
+                    </tr>
+                  </table></td>
+                <td width="35%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" class="FooterMoreLinksHeading">Our Services</td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#">Delivery &amp; Returns</a></td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#">Shipment Policy</a></td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#"> Buying Guides</a></td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#">Find a Product</a></td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#"> Terms &amp; Conditions<br />
+                        </a></td>
+                    </tr>
+                  </table></td>
+                <td width="30%" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td valign="top" class="FooterMoreLinksHeading">&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#">FAQ</a></td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#">GIFT VOUCHER</a></td>
+                    </tr>
+                    <tr>
+                      <td class="FooterMoreLinksBullet"><a href="#">CURRENCY EXCHANGE</a></td>
+                    </tr>
+                  </table></td>
+                <td width="0%" valign="top"><!--<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                      <td><div class="FooterJoinUs">
+                          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                            <tr>
+                              <td class="FooterJoinUsHeading">Join us now!</td>
+                            </tr>
+                            <tr>
+                              <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                              <td><div class="FooterJoinUsFeldBg">
+                                  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                    <tr>
+                                      <td width="80%" height="28" align="left" valign="top"><input name="textfield" type="text" class="FooterJoinUsFeld" value="Enter Keyword" /></td>
+                                      <td width="20%" height="28" align="center" valign="middle"><a href="#"> <img src="images/join-us-feld-btn.gif" alt="Btn" width="16" height="16" border="0" /></a></td>
+                                    </tr>
+                                  </table>
+                                </div></td>
+                            </tr>
+                          </table>
+                        </div></td>
+                    </tr>
+                    <tr>
+                      <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                      <td><table width="90%" border="0" align="right" cellpadding="0" cellspacing="0">
+                          <tr>
+                            <td width="55%" class="FooterJoinUsHeading">follow  - us</td>
+                            <td width="15%" align="right"><a href="#"><img src="images/facebook-icon.gif" alt="img" width="23" height="23" border="0" /></a></td>
+                            <td width="15%" align="right"><a href="#"><img src="images/twitter-icon.gif" alt="img" width="23" height="23" border="0" /></a></td>
+                            <td width="15%" align="right"><a href="#"><img src="images/follow-us-icon.gif" alt="img" width="23" height="23" border="0" /></a></td>
+                          </tr>
+                        </table></td>
+                    </tr>
+                  </table>--></td>
+              </tr>
+            </table>
+            <!-- More links ends  --> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer_content"> </div>
+  <div class="copyright_bg">
+    <div class="copyright">
+      <div id="FooterTxt">
+        <ul>
+          <li>&copy; 2012 Top World Co. All Rights Reserved &nbsp; &nbsp; &nbsp; </li>
+          <li><a href="#"><img src="images/facebook-icon.gif" alt="img" width="23" height="23" border="0" /></a></li>
+          <li><a href="#"><img src="images/twitter-icon.gif" alt="img" width="23" height="23" border="0" /></a></li>
+          <li><a href="#"><img src="images/follow-us-icon.gif" alt="img" width="23" height="23" border="0" /></a></li>
+          <li>&nbsp;</li>
+          <li>&nbsp;</li>
+          <li><a href="#"><img src="images/k-net-icon.gif" alt="icon" border="0" /></a></span></li>
+        </ul>
+      </div>
+      <div class="FooterPowredBy fltrt">Powered by: <a href="http://www.mawaqaa.com/index.html" target="_blank"><img src="images/powered-by.gif" alt="icon" width="15" height="16" border="0" /></a></div>
+    </div>
+  </div>
+</div>
+<!--footer-->
+</body>
+</html>

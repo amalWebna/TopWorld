@@ -1,0 +1,62 @@
+.Invisible{
+	display:none;
+	visibility:hidden;
+}
+
+.Visible{
+	display: block;
+	visibility: visible;
+	position:relative;
+	width:354px;
+	
+}
+.detailsnew{}
+.detailsnew span{
+	float:left;
+	bottom:0px;
+	left:0px;
+	position:relative;
+	display:block;
+	height:16px;
+	color:#fff;
+	background:url(../images/zoom.png) no-repeat left top;
+	padding:2px 22px 2px 8px;
+	font-size:10px;
+	min-width:110px;
+}
+.detailsnew a{color:#fff; text-decoration:none;}
+/*.Visible span{
+	float:right;
+	bottom:0px;
+	left:0px;
+	position:absolute;
+	display:block;
+	height:16px;
+	color:#fff;
+	background:url(../images/zoom.png) no-repeat left top;
+	padding:2px 18px 2px 2px;
+	filter:alpha(opacity=20);
+	opacity:0.6;
+}*/
+.Visible div{
+	float:right;
+	bottom:0px;
+	right:0px;
+	position:absolute;
+	display:block;
+	height:50px;
+}
+.zoom{}
+.gall{
+	background:url(../images/roundedbox.gif)  no-repeat left -0px; max-width:70px; max-height:45px; display:block; padding:12px 5px 10px 5px;
+}
+.gall_or{
+	background:url(../images/roundedbox_or.gif)  no-repeat left -0px; max-width:70px; max-height:45px; display:block; padding:12px 5px 10px 5px;
+}
+.gall:hover{
+	background:url(../images/roundedbox_or.gif)  no-repeat left -0px;
+}
+
+.gall1{
+	background:url(../images/roundedbox.gif)  no-repeat left -0px; max-width:70px; max-height:45px; display:block; padding:12px 5px 10px 5px; margin:5px;
+}
