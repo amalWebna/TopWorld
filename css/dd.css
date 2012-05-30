@@ -114,7 +114,7 @@
 	cursor:pointer;
 	top:0px;
 	position:relative;
-	right:30px;
+	right:44px;
 }
 
 .dd2 .ddTitle span.ddTitleText {
@@ -128,6 +128,7 @@
 	_top:4px;
 	position:relative;
 	top:-1px;
+	right:-30px;
 }
 .dd2 .ddTitle span.ddTitleText img{text-align:left; padding:9px 15px 0 10px; float:right;}
 .dd2 .ddTitle img.selected {
