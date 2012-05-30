@@ -784,11 +784,11 @@ a:active 							{   }
 
 /*--------------------old check out-------------------------------*/
 .containerright						{font-family:Arial; font-size:13px; color:#666;}
-.content2col_left					{width:300px; padding-right:10px;}
+.content2col_left					{width:300px; padding-left:10px;}
 
 .content2col_right					{width:300px; padding-left:10px; text-align:left;}
 .wholesaleitem_heading				{}
-.wholesaleitem_heading h4			{ background:#000; padding:5px 10px 5px 10px; font:15px "Century Gothic",Arial, Helvetica, sans-serif;; color:#fff;}
+.wholesaleitem_heading h4			{ background:#000; padding:5px 10px 5px 10px; font:15px "Century Gothic",Arial, Helvetica, sans-serif;; color:#fff; text-align:right;}
 
 
 
@@ -1439,7 +1439,7 @@ table.list tfoot td {
 }
 table.list .left {
 	padding: 7px;
-	text-align: left;
+	text-align: right;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 12px;
 }
@@ -1545,7 +1545,7 @@ a.button1:hover span {
     text-align: left;
 }
 .buttons .right {
-    float: right;
+    float: left;
     text-align: right;
 }
 .buttons .center {
@@ -1707,8 +1707,8 @@ a.button1:hover span {
 }
 #content .content a{
 	color:#000;
-	padding:5px 0px 5px 15px;
-	background: url(../images/arrow.gif) no-repeat left;
+	padding:5px 15px 5px 0;
+	background: url(../images/arrow.gif) no-repeat right;
 	text-decoration:none;
 }
 #content .content .left {
@@ -2286,7 +2286,7 @@ a.button1:hover span {
     margin-bottom: 10px;
 }
 .order-list .order-id {
-    float: left;
+    float: right;
     margin-bottom: 0px;
     width: 49%;
 	background:#e1e5e7;
@@ -2295,7 +2295,7 @@ a.button1:hover span {
 .order-list .order-status {
     float: right;
     margin-bottom: 0px;
-    text-align: right;
+    text-align: left;
     width: 49%;
 }
 .order-list .order-content {
@@ -2308,7 +2308,7 @@ a.button1:hover span {
     width: 100%;
 }
 .order-list .order-content div {
-    float: left;
+    float: right;
     width: 33.3%;
 }
 .order-list .order-info {
@@ -2762,7 +2762,7 @@ a.button1:hover span {
 	background:#000;
 	display:block;
 	width:100%;
-	padding-left:10px;
+	padding-right:10px;
 	font-weight: bold;
 
 }
