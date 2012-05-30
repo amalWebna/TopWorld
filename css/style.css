@@ -867,9 +867,9 @@ a:active 							{   }
 .gall1								{	background:#fff; padding:4px; margin:4px;}
 
 .sitemap							{}
-.sitemap li a						{	background:url(../images/arrow.gif) no-repeat left 5px; color:#000; text-decoration:none; padding:0px 0px 0px 20px; font-weight:bold;
+.sitemap li a						{	background:url(../images/arrow.gif) no-repeat right 5px; color:#000; text-decoration:none; padding:0px 20px 0px 0px; font-weight:bold;
 										font-family:Arial; font-size:13px;}
-.sitemap li  li a					{	background:url(../images/bg/submenu_bg.gif) no-repeat 10px 5px; color:#000; text-decoration:none; padding:0px 0px 0px 30px; font-weight:normal;}
+.sitemap li  li a					{	background:url(../images/bg/submenu_bg.gif) no-repeat right 5px; color:#000; text-decoration:none; padding:0px 30px 0px 0px; font-weight:normal;}
 
 .tablecenter						{	margin:auto auto;}
 .readmore_link1						{	background:url(../images/bg/submenu_bg.gif) no-repeat 10px 5px; color:#000; text-decoration:none; padding:0px 0px 0px 25px;}
@@ -1541,7 +1541,7 @@ a.button1:hover span {
 	
 }
 .buttons .left {
-    float: left;
+    float: right;
     text-align: left;
 }
 .buttons .right {
@@ -1840,7 +1840,7 @@ a.button1:hover span {
     overflow: auto;
 }
 .product-list .right {
-    float: right;
+    float: left;
     margin-left: 15px;
 }
 .product-list > div + div {
@@ -1873,7 +1873,7 @@ a.button1:hover span {
 }
 .product-list .price {
     color: #333333;
-    float: right;
+    float: left;
     font-size: 12px;
     height: 50px;
     margin-left: 8px;
