@@ -795,7 +795,7 @@ a:active 							{   }
 .regform							{text-align:left;}
 .regform td							{vertical-align:top; text-align:right;}
 .regform div						{min-height:35px;}
-.regform div input					{width:180px; font:12px Arial, Helvetica, sans-serif; color:#626262; border:#c7d8e2 1px solid;}
+.regform div input					{width:191px; font:12px Arial, Helvetica, sans-serif; color:#626262; border:#c7d8e2 1px solid;}
 .regform div select					{width:184px; font:12px Arial, Helvetica, sans-serif; color:#626262; border:#c7d8e2 1px solid;}
 .regform div textarea				{width:180px; font:12px Arial, Helvetica, sans-serif; color:#626262; border:#c7d8e2 1px solid; resize:none; margin-bottom:10px;}
 .regform  .bigtextarea textarea		{width:275px; font:12px Arial, Helvetica, sans-serif; color:#626262; border:#c7d8e2 1px solid; resize:none; margin-bottom:10px;}
@@ -1487,7 +1487,8 @@ a.button {
 	display: inline-block;
 	padding-left: 10px;
 	text-decoration: none;
-	margin-right: 20px;
+	margin-right: 0px;
+	margin-left:10px;
 }
 a.button span {
 	background: url("../images/btn_gray_right.gif") no-repeat scroll right top transparent;
@@ -1513,6 +1514,7 @@ a.button1 {
     display: inline-block;
     padding-left: 10px;
     text-decoration: none;
+	float:left;
 }
 a.button1 span {
     background: url("../images/btn_black_right.gif") no-repeat scroll right top transparent;
@@ -1536,6 +1538,7 @@ a.button1:hover span {
 	padding: 6px;
 	font-size: 12px;
 	font-family: Arial, Helvetica, sans-serif;
+	
 }
 .buttons .left {
     float: left;
@@ -1640,6 +1643,7 @@ a.button1:hover span {
     display: block;
     font-weight: bold;
     margin-bottom: 4px;
+	
 }
 .box-product .price-old {
     color: #FF0000;
@@ -1874,6 +1878,7 @@ a.button1:hover span {
     height: 50px;
     margin-left: 8px;
     text-align: right;
+	width:10%;
 }
 .product-list .price-old {
     color: #FF0000;
@@ -2553,12 +2558,12 @@ a.button1:hover span {
     padding: 0 10px 15px 10px;
 }
 .checkout-content .left {
-    float: left;
+    float: right;
     width: 48%;
 	padding-left:10px;
 }
 .checkout-content .right {
-    float: right;
+    float: left;
     width: 48%;
 	padding-right:10px;
 }
@@ -2743,7 +2748,8 @@ a.button1:hover span {
 	padding: 0 0 0 0; 
 	font-family:"Tw Cen MT", "Tw Cen MT Condensed"; 
 	font-size:30px; color:#000;
-	line-height:40px;	
+	line-height:40px;
+	float:right;
 
 }
 .main_heading_sub{
