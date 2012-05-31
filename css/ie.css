@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+
+#navigation {
+	margin-right:25px;
+}
+.mainmenu{width:707px}
+
+.page_container_home .mainmenu{width:712px}
