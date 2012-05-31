@@ -223,6 +223,8 @@ img{
 	padding-top:3px;
 }
 
+.page_container_home #navigation li a{text-align:right;}
+
 #navigation li ul {
 	position: absolute;
 	top:24px;
