@@ -1,0 +1,187 @@
+.currencydroupdown{
+	width:80px;
+}
+/************** Skin 1 *********************/
+.dd {
+	/*display:inline-block !important;*/
+	text-align:left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	float:left;
+	
+}
+.dd .ddTitle {
+	border:1px solid #050708;
+	padding:3px;
+	text-indent:0;
+	cursor:default;
+	overflow:hidden;
+	height:16px;
+}
+.dd .ddTitle span.arrow {
+	background:url(../images/dd_arrow.gif) no-repeat 0 0; float:right; display:inline-block;width:16px; height:15px; cursor:pointer; 
+}
+
+.dd .ddTitle span.ddTitleText {text-indent:1px; overflow:hidden; line-height:16px;}
+.dd .ddTitle span.ddTitleText img{
+	text-align:left;
+	padding-top: 5px;
+	padding-right: 2px;
+	padding-bottom: 0;
+	padding-left: 20;
+}
+.dd .ddTitle img.selected {
+	padding:0 3px 0 0;
+	vertical-align:top;
+}
+.dd .ddChild {
+	position:absolute;
+	display:none;
+	margin:0;
+	width:90px;
+	overflow:auto;
+	overflow-x:hidden !important;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #606060;
+	border-right-color: #606060;
+	border-bottom-color: #606060;
+	border-left-color: #606060;
+}
+.dd .ddChild .opta a, .dd .ddChild .opta a:visited {padding-left:10px}
+.dd .ddChild a {
+	display:block;
+	padding:10px 10 2px 3px;
+	text-decoration:none;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+}
+#websites2{ width:70px;}
+.dd .ddChild a:hover {
+
+}
+.dd .ddChild a img {
+	border:0;
+	vertical-align:middle;
+	padding-top: 5px;
+	padding-right: 2px;
+	padding-bottom: 0;
+	float: right;
+}
+.dd .ddChild a.selected {
+	
+	
+}
+.hidden {display:none;}
+
+.dd .borderTop{border-top:1px solid #c3c3c3 !important;}
+.dd .noBorderTop{border-top:none 0  !important}
+
+/************** Skin 2 *********************/
+.dd2 {
+	/*display:inline-block !important;*/
+	text-align:left;
+	
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	float:left;
+}
+.dd2 .ddTitle {
+	background:transparent url(../images/currecny.gif) no-repeat;
+	text-indent:0;
+	cursor:default;
+	overflow:hidden;
+	height:22px;
+	width:95px;
+	padding-top: 0;
+	padding-right: 6px;
+	padding-bottom: 0;
+	padding-left: 6px;
+}
+.dd2 .ddTitle span.arrow {
+	background:transparent url(../images/downarrowcurrency.gif) no-repeat 0 0; 
+	float:right;
+	display:inline-block;
+	width:22px;
+	height:18px;
+	cursor:pointer;
+	top:0px;
+	position:relative;
+	right:44px;
+}
+
+.dd2 .ddTitle span.ddTitleText {
+	text-indent:1px;
+	overflow:hidden;
+	line-height:23px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666;
+	_position:relative;
+	_top:4px;
+	position:relative;
+	top:-1px;
+	right:-30px;
+}
+.dd2 .ddTitle span.ddTitleText img{text-align:left; padding:9px 15px 0 10px; float:right;}
+.dd2 .ddTitle img.selected {
+	padding:0 10px 0 0;
+	vertical-align:top;
+}
+.dd2 .ddChild {
+	position:absolute;
+	border:1px solid #232323;
+	border-top:none;
+	display:none;
+	margin:0;
+	overflow:auto;
+	overflow-x:hidden !important;
+	background-color:#808080;
+	font-size:12px;
+}
+.dd2 .ddChild .opta a, .dd2 .ddChild .opta a:visited {padding-left:10px;}
+.dd2 .ddChild a {
+	display:block;
+	padding:3px 0 3px 3px;
+	text-decoration:none;
+	color:#ccc;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+}
+.dd2 .ddChild a:hover {
+	
+}
+.dd2 .ddChild a img {
+	border:0;
+	vertical-align:middle;
+	float:right;
+	padding-top: 0;
+	padding-right: 25px;
+	padding-bottom: 0;
+	padding-left: 20;
+}
+.dd2 .ddChild a.selected {
+
+}
+
+.dd2 .borderTop{border-top:1px solid #c3c3c3  !important;}
+.dd2 .noBorderTop{border-top:none 0  !important}
+.manufacturer-content ul {
+}
+.manufacturer-content li {
+	float: left;
+	width: 300px;
+	height: 20px;
+}
+.sitesearch_in #currency1 {
+	float: right;
+}
+

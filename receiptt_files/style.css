@@ -643,7 +643,7 @@ a:active 							{   }
 
 
 
-.InnerProductListBox				{	width:218px; height:322px; float:right; background-color:#FFF; margin: 0 0 17px 14px; 	}
+.InnerProductListBox				{	width:218px; height:322px; float:left; background-color:#FFF; margin: 0 14px 17px 0px; 	}
 .InnerProductListBoxImg				{	margin: 0 0 0 0px; text-align:center; 	}
 
 .InnerProductListBoxTxt				{
@@ -665,7 +665,7 @@ a:active 							{   }
 
 
 .innerContainerHeading 				{	text-transform: uppercase; color:#000000;
-										padding: 0px 0 20px 15px; font-family: "Tw Cen MT"; font-size: 24px;}
+										padding: 0px 15px 20px 0px; font-family: "Tw Cen MT"; font-size: 24px;}
 
 
 
