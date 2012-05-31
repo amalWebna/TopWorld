@@ -27,11 +27,11 @@ body {
 }
 .textbold{
 	font-weight:bold;
-	text-align:left;
+	text-align:right;
 	font-size:12px;
 }
 .tablebg{
-	text-align:left;
+	text-align:right;
 	background-color:#eee;
 }
 .teblehead{

@@ -1445,7 +1445,7 @@ table.list .left {
 }
 table.list .right {
     padding: 7px;
-    text-align: right;
+    text-align: left;
 }
 table.list .center {
     padding: 7px;
@@ -1848,7 +1848,7 @@ a.button1:hover span {
     padding-top: 16px;
 }
 .product-list .image {
-    float: left;
+    float: right;
     margin-right: 10px;
 }
 .product-list .image img {
@@ -2588,20 +2588,20 @@ a.button1:hover span {
     font-weight: bold;
 }
 .checkout-product thead .name, .checkout-product thead .model {
-    text-align: left;
+    text-align: right;
 }
 .checkout-product thead .quantity, .checkout-product thead .price, .checkout-product thead .total {
-    text-align: right;
+    text-align: left;
 }
 .checkout-product tbody td {
     border-bottom: 1px solid #DDDDDD;
     vertical-align: top;
 }
 .checkout-product tbody .name, .checkout-product tbody .model {
-    text-align: left;
+    text-align: right;
 }
 .checkout-product tbody .quantity, .checkout-product tbody .price, .checkout-product tbody .total {
-    text-align: right;
+    text-align: left;
 }
 .checkout-product tfoot td {
     border-bottom: 1px solid #DDDDDD;
